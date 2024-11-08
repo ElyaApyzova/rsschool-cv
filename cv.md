@@ -11,7 +11,7 @@ Highly motivated and quick-learning Junior Developer eager to contribute to a dy
 **Methodologies:** Agile, Scrum 
 
 ## Code examples
-* **Leetcode1:** Tasks. https://github.com/ElyaApyzova/Leetcode1.git
+* **Leetcode-tasks:** Tasks. https://github.com/ElyaApyzova/Leetcode1.git
 * **leetcode-tasks:** Tasks. https://github.com/ElyaApyzova/leetcode-tasks.git
 * **Wedding-js:** Online shoppinf landing page. https://github.com/ElyaApyzova/Wedding-js.git
 ## Experience
