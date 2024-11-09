@@ -31,6 +31,6 @@ Highly motivated and quick-learning Junior Developer eager to contribute to a dy
 
 ## English
 
-- **Osh State University Faculty of World Languages:** Linguist and Interpreter, English teacher
+- **Osh State University Faculty of World Languages:** Linguist and Interpreter, 2005-2010
 
   I studied at Osh State University, where I majored in Linguistics and Interpretation, focusing on English language proficiency and translation skills. During my studies, I actively engaged in various language seminars and workshops, enhancing my pedagogical techniques and understanding of language acquisition. I also participated in language exchange programs that provided practical experience in teaching English to diverse groups, further solidifying my passion for language education.
