@@ -1,0 +1,39 @@
+:root {
+   
+  --title-color: #f9d209;
+  --text-color: #403a3a;
+  --text-color-light: #707070;
+  --container: #191919;
+  --background: #766A37;
+  --border: #F2E207;
+
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --h4-font-size: 0.938rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+  }
+  
