@@ -237,6 +237,6 @@ i {
   max-width: 80px;
 }
 
-.footer__container_title {
+.footer__container_link {
   font-size: var(--h1-font-size);
 }

@@ -56,7 +56,7 @@
     
   }
 
-  .footer__container_title {
+  .footer__container_link {
     font-size: var(--h2-font-size);
   }
 }
@@ -188,7 +188,7 @@
     max-width: 40px;
   }
 
-  .footer__container_title {
+  .footer__container_link {
     font-size: var(--normal-font-size);
   }
 
@@ -262,7 +262,7 @@
     margin-bottom: 1rem;
   }
 
-  .footer__container_title {
+  .footer__container_link {
     font-size: var(--smaller-font-size);
   }
 
