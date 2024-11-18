@@ -50,15 +50,20 @@
     
 }
 
+@media (max-width: 700px) {
+
+  .footer__container_link {
+    font-size: var(--normal-font-size);
+  }
+}
+
+
 @media (max-width: 512px) {
   .section__skills_main {
     display: none;
     
   }
 
-  .footer__container_link {
-    font-size: var(--h2-font-size);
-  }
 }
 
 
@@ -200,6 +205,14 @@
   .section__language_uni {
     display: none;
   }
+
+  .footer__container_link {
+    font-size: 12px;
+  }
+
+  .footer__container_year {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 340px) {
@@ -262,8 +275,6 @@
     margin-bottom: 1rem;
   }
 
-  .footer__container_link {
-    font-size: var(--smaller-font-size);
-  }
+  
 
 }
