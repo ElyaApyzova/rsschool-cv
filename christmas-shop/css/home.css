@@ -1,0 +1,22 @@
+
+
+.hero__wrapper {
+    background-image: url(../img/hero-background.png);
+}
+
+.about__wrapper {
+    background-image: url(../img/about-background.png);
+}
+
+.slider__wrapper {
+    background-image: url(../img/slider-background.png);
+}
+
+.best__wrapper {
+    background-image: url(../img/best-background.png);
+}
+
+.explore__wrapper {
+    background-image: url(../img/cards-background.png);
+}
+
