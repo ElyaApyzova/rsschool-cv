@@ -5,18 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
   <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/home.css">
   <link rel="stylesheet" href="./css/gifts.css">
 </head>
 <body>
   <header class="header">
-    <div class="container">
-    <nav class="nav__menu">
+    <div class="container inner__header">
       <div class="nav__menu_logo">
 <img src="./img/snowflake_logo.svg" class="nav__menu_snow" alt="">
 <p class="nav__menu_text">the gifts</p>
       </div>
+      <nav class="nav__menu">
       <ul class="nav__menu_list">
         <li class="nav__menu_item">
           <a href="#gifts" class="nav__menu_link">gifts</a>
@@ -28,20 +34,18 @@
     </nav>
   </div>
   </header>
+  <div class="main__wrapper hero__wrapper">
+    <div class="container inner__hero">
+      <div class="section__hero_content">
+      <p class="hero__text">Merry Christmas</p>
+      <h1 class="hero__title">Gift yourself<br/>the magic of new possibilities</h1>
+      <a href="C:\Users\vaa\Desktop\rsschool-cv\rsschool-cv\christmas-shop\gifts.html" class="hero__btn" target="_blank">Explore Magical Gifts</a>
+      <p class="hero__text">and Happy New Year</p>
+    </div>
+    </div>
+    </div>
   <main>
  <div class="main__wrapper">   
-<div class="hero__wrapper">
-<section class="section section__hero">
-<div class="container">
-  <div class="section__hero_content">
-  <p class="hero__text">Merry Christmas</p>
-  <h1 class="hero__title">Gift yourself the magic of new possibilities</h1>
-  <a href="C:\Users\vaa\Desktop\rsschool-cv\rsschool-cv\christmas-shop\gifts.html" class="hero__btn" target="_blank">Explore Magical Gifts</a>
-  <p class="hero__text">and Happy New Year</p>
-</div>
-</div>
-</section>
-</div>
 <div class="about__wrapper">
 <section class="section section__about">
 <div class="container">
@@ -82,11 +86,11 @@
 </li>
   </ul>
   <div class="slider__section_btns">
-    <button class="slider__section_prev">
-      <img src="./img/arrow-left.png" alt="Previous Slider">
+    <button class="btn slider__section_prev">
+      <img class="slider__section_icon" src="./img/arrow-left.png" alt="Previous Slider">
     </button>
-    <button class="slider__section_next">
-      <img src="./img/arrow-right.png" alt="Next Slider">
+    <button class="btn slider__section_next">
+      <img class="slider__section_icon" src="./img/arrow-right.png" alt="Next Slider">
     </button>
   </div>
   
