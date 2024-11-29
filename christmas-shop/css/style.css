@@ -87,6 +87,8 @@ html {
     width: 100%;
     max-width: 1440px;
     background: var(--primary);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .section {
