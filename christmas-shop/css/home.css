@@ -63,8 +63,6 @@
     width: 100%;
     max-width: 1440px;
     max-height: 524px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
 
 .about__wrapper {
@@ -111,16 +109,21 @@
   }
   
   .inner__header {
-    padding: 20px;
+    padding: 12px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .nav__menu_logo {
+.nav__menu_logo {
+    padding: 8px 20px;
+}
+
+  .nav__logo_link {
     display: flex;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
   }
 
   .nav__menu_snow {
@@ -136,10 +139,18 @@
     text-transform: uppercase;
   }
 
-  .nav__menu_item {
+  .nav__menu_list {
     display: flex;
-    gap: 48px;
+    gap: 8px;
   }
+
+  .nav__menu_item {
+    padding: 12px 20px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+ 
 
   .nav__menu_link {
     font-size: var(--action-small-font-size);
@@ -147,10 +158,19 @@
     line-height: var(--fourth-line-height);
     letter-spacing: var(--third-letter-spacing);
     text-transform: uppercase;
+    
+  }
+
+  .nav__menu_item:hover {
+    background-color: rgba(255, 70, 70, 0.1);
+    color: var(--primary);
+    border-radius: 12px;
   }
 
   .wrapper {
     background: var(--primary);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 
   .section__hero_content {
@@ -183,7 +203,7 @@
 
 .hero__btn {
     padding: 20px 32px;
-    background: var(--dark);
+    background-color: var(--dark);
     color: var(--static-white);
     border-radius: 20px;
     margin-bottom: 20px;
@@ -192,7 +212,15 @@
     line-height: var(--fourth-line-height);
     letter-spacing: var(--third-letter-spacing);
     text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.hero__btn:hover {
+    background-color: var(--static-white);
+    color: var(--dark);
+}
+
+
 
 /* About section  */
 
@@ -302,15 +330,74 @@
     gap: 20px;
 }
 
-.btn {
+.slider__section_prev {
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.slider__section_next {
     padding: 16px;
     border: 1px solid var(--static-white);
     border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.slider__section_prev {
-    opacity: 0.4;
+
+.btn {
+    position: relative;
+    overflow: hidden;
 }
+
+.slider__section_prev img,
+.slider__section_next img {
+    transition: opacity 0.3s ease;
+}
+
+.btn:hover img {
+    opacity: 0; 
+}
+
+.slider__section_next:hover::after {
+    content: '';
+    position: absolute;
+    background-image: url(../img/arrow-right-red.png); 
+    top: 50%;
+    left: 50%;
+    width: 20px; 
+    height: 20px;  
+    background-repeat: no-repeat; 
+    transform: translate(-50%, -50%); 
+    transition: opacity 0.3s ease;
+    opacity: 1; 
+}
+
+.slider__section_prev:hover::before {
+    content: '';
+    position: absolute;
+    background-image: url(../img/arrow-left-red.png); 
+    top: 50%;
+    left: 50%;
+    width: 24px; 
+    height:24px;  
+    background-repeat: no-repeat; 
+    transform: translate(-50%, -50%); 
+    transition: opacity 0.3s ease;
+    opacity: 1; 
+}
+
+
+
+.slider__section_prev:hover,
+.slider__section_next:hover {
+    background-color: var(--static-white); 
+    
+    
+}
+
+
+
 
 .slider__section_icon {
     width: 24px;
@@ -341,7 +428,8 @@
 }
 
 .best__section_container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
 }
 
@@ -353,6 +441,14 @@
     align-items: center;
     background: var(--content-background);
     border-radius: 20px;
+    cursor: pointer;
+}
+
+.best__section_box:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease;
+    background: rgba(6, 164, 79, 0.1);
+    
 }
 
 .best__section_image {
@@ -368,6 +464,12 @@
     padding:  20px 20px 44px 20px;
 }
 
+.best__section_content:hover  {
+    background: rgba(6, 164, 79, 0.1);;
+}
+
+
+
 .best__section_subtitle {
     font-size: var(--h4-font-size);
     font-weight: var(--font-weight);
@@ -377,6 +479,7 @@
     color: var(--tag-purple);
     margin-bottom: 8px;
 }
+
 
 .best__section_green {
     color: var(--tag-green);
@@ -391,6 +494,10 @@
     font-weight: var(--font-weight);
     letter-spacing: var(--second-letter-spacing);
     text-transform: uppercase;
+}
+
+.best__section_description:hover {
+    color: var(--primary);
 }
 
 /* Timer */
@@ -428,18 +535,6 @@
     margin-bottom: 20px;
 }
 
-.explore__section_btn {
-    padding: 20px 32px;
-    background: var(--dark);
-    color: var(--static-white);
-    border-radius: 20px;
-    margin-bottom: 20px;
-    font-size: var(--action-small-font-size);
-    font-weight: var(--font-weight);
-    line-height: var(--fourth-line-height);
-    letter-spacing: var(--third-letter-spacing);
-    text-transform: uppercase;
-}
 
 
 .explore__section_description {
@@ -452,12 +547,19 @@
 }
 
 
+.explore__section_timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .explore__section_container {
+    width: 100%;
+    max-width: 344px;
     display: flex;
     justify-content: center;
     background: rgba(255, 255, 255, 0.4);
-    padding: 12px 12px;
-    opacity: 0.4;
+    padding: 8px 12px 12px 12px;
     border-radius: 20px;
 }
 
@@ -467,10 +569,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 15px;
+    padding: 0px 12px;
 }
 
-.explore__section_box::before{
+.explore__section_box::before:not(.explore__section_time) {
     content: "";
     background-image: url(../img/Separator.png);
     background-size: cover; 
@@ -548,12 +650,19 @@
   margin-bottom: 12px;
 }
 
+.footer__contacts_cards:hover {
+    color: var(--primary);
+}
+
+
+
 .footer__contacts_description {
     font-size: var(--h3-font-size);
     font-weight: var(--font-weight);
     letter-spacing: var(--second-letter-spacing);
     text-transform: uppercase;
 }
+
 
 
 .footer__socials_list {
@@ -566,6 +675,10 @@
 .footer__socials_icon {
     width: 40px;
     height: 40px;
+}
+
+.footer__socials_icon:hover {
+    color: var(--primary);
 }
 
 .footer__description {
@@ -584,6 +697,10 @@
     font-size: var(--caption-font-size);
     line-height: var(--fifth-line-height);
     letter-spacing: var(--third-letter-spacing);
+}
+
+.footer__link:hover {
+    color: var(--primary);
 }
 
 
