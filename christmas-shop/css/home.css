@@ -365,8 +365,8 @@
     background-image: url(../img/arrow-right-red.png); 
     top: 50%;
     left: 50%;
-    width: 20px; 
-    height: 20px;  
+    width: 24px; 
+    height: 24px;  
     background-repeat: no-repeat; 
     transform: translate(-50%, -50%); 
     transition: opacity 0.3s ease;
@@ -569,20 +569,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 12px;
+    width: 80px;
+    height: 52px;
 }
 
-.explore__section_box::before:not(.explore__section_time) {
-    content: "";
-    background-image: url(../img/Separator.png);
-    background-size: cover; 
-    display: block;
-    width: 1px;  
-    height: 30px; 
+.explore__section_box::before {
+    content: '';
     position: absolute;
-    top: 10;
-    left: 0;
+    top: 50%;
+    right: 0;
+    width: 1px; 
+    height: 20px; 
+    background-color: var(--static-white);
+    transform: translateY(-50%); 
 }
+.explore__section_box:last-child::before {
+    display: none;
+}
+ 
+
 
 .explore__section_number {
     font-size: var(--h2-font-size);
