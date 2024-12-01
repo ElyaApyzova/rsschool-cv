@@ -1,0 +1,269 @@
+@media (max-width: 850px) {
+
+  .nav__menu_link:hover {
+    color: #a59e79;
+    
+  }
+    .mobile__menu_list {
+        width: 100%;
+        background-color: var(--title-color);
+        color: var(--text-color);
+        flex-direction: column;
+        gap: 10px;
+        padding: 30px;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        transform: translateY(-150%);
+        transition: transform 0.5s ease;
+        text-transform: uppercase;
+      }
+    
+      .mobile__menu_list.menu__open {
+        transform: translateY(0%);
+      }
+    .menu__btn{
+        display: flex;
+        cursor: pointer;
+      }
+
+      .mobile__menu {
+        order: 1;
+      }
+
+      .close__btn {
+        display: none;
+        border: none;
+        background-color: transparent;
+        color: var(--text-color);
+        font-size: 24px; 
+        cursor: pointer;
+        position: absolute;
+        right: 20px; 
+        top: 20px; 
+    }
+
+    .close__btn:hover {
+      color: #a59e79;
+  }
+    
+}
+
+@media (max-width: 512px) {
+  .section__skills_main {
+    display: none;
+    
+  }
+
+  .footer__container_title {
+    font-size: var(--h2-font-size);
+  }
+}
+
+
+@media (max-width: 460px) {
+
+  .header {
+    position: static;
+  }
+
+
+  .container {
+    padding: 1.5rem;
+  }
+  .section__hero_content {
+    margin-bottom: 10px;
+    
+  }
+
+  .section__hero_img {
+    max-width: 250px;
+    margin: 10px 0;
+  }
+
+  .section__hero_title {
+    font-size: var(--h2-font-size);
+  }
+
+  .section__hero_subtitle {
+    font-size: var(--h2-font-size);
+  }
+
+  .section__hero_contacts {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section__hero_contacts-title {
+    font-size: var(--normal-font-size);
+  }
+
+  .section__hero_list {
+    gap: 10px;
+  }
+
+  .section__hero_item {
+    gap: 10px;
+  }
+
+  .section__hero_link {
+    font-size: var(--smaller-font-size);
+  }
+
+
+  i {
+    font-size: 1rem;
+  }
+
+  .section__title {
+    font-size: var(--h3-font-size);
+    letter-spacing: 0.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .section__summary_description {
+    font-size: var(--smaller-font-size);
+    line-height: 1.8;
+  }
+
+  .section__skills_list {
+    gap: 10px;
+  }
+
+  .section__skills_item {
+    font-size: var(--smaller-font-size);
+  }
+
+  .section__skills_main {
+    display: block;
+    
+  }
+
+  .section__code_link {
+    font-size: var(--smaller-font-size);
+  }
+
+  .section__experience_subtitle {
+    font-size: var(--normal-font-size);
+    margin-bottom: 10px;
+  }
+
+  .section__experience_description {
+    font-size: var(--smaller-font-size);
+    line-height: 1.8;
+  }
+
+  .section__education_container {
+    gap: 10px;
+  }
+
+  .section__education_subtitle {
+    font-size: var(--small-font-size);
+  }
+
+  .section__education_text {
+    font-size: var(--smaller-font-size);
+  }
+
+ 
+
+  .section__language_uni {
+    font-size: var(--normal-font-size);
+    margin-right: 10px;
+    color: var(--text-color);
+  }
+
+  .section__language_subtitle {
+    color: var(--title-color);
+    font-size: var(--smaller-font-size);
+  }
+
+  .section__language_description {
+    font-size: var(--small-font-size);
+    line-height: 1.8;
+  }
+
+  .footer__container_img {
+    max-width: 40px;
+  }
+
+  .footer__container_title {
+    font-size: var(--normal-font-size);
+  }
+
+}
+
+@media (max-width: 424px) {
+ 
+
+  .section__language_uni {
+    display: none;
+  }
+}
+
+@media (max-width: 340px) {
+  .section__hero_content {
+    margin-bottom: 10px;
+    
+  }
+
+  .section__hero_img {
+    max-width: 200px;
+  }
+
+  .section__hero_title {
+    font-size: var(--h3-font-size);
+  }
+
+  .section__hero_subtitle {
+    font-size: var(--h3-font-size);
+  }
+
+
+  .section__hero_contacts-title {
+    font-size: var(--small-font-size);
+  }
+
+  .section__hero_list {
+    gap: 7px;
+  }
+
+  .section__hero_item {
+    gap: 7px;
+  }
+
+  .section__hero_link {
+    font-size: var(--smaller-font-size);
+  }
+
+  .section__experience_subtitle {
+    font-size: var(--small-font-size);
+  }
+
+}
+
+@media (max-width: 300px) {
+  .section__hero_img {
+    max-width: 150px;
+  }
+
+  .section__hero_title {
+    font-size: var(--normal-font-size);
+  }
+
+  .section__hero_subtitle {
+    font-size: var(--normal-font-size);
+  }
+
+  .section__title {
+    font-size: var(--normal-font-size);
+    letter-spacing: 0.15rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer__container_title {
+    font-size: var(--smaller-font-size);
+  }
+
+}

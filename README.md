@@ -1,2 +1,4 @@
 # rsschool-cv
-## My CV: https://elyaapyzova.github.io/rsschool-cv/
+
+ https://github.com/ElyaApyzova/rsschool-cv
+
